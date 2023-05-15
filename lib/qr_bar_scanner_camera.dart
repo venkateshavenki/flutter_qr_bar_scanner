@@ -214,7 +214,7 @@ class Preview extends StatelessWidget {
               child: SizedBox(
                 width: frameWidth,
                 height: frameHeight,
-                child: Transform.scale(scale: 2.0, child: Texture(textureId: textureId!)),
+                child: Texture(textureId: textureId!),
               ),
             ),
           ),
