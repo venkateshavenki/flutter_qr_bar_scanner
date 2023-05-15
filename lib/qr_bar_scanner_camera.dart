@@ -208,7 +208,7 @@ class Preview extends StatelessWidget {
 
         return ClipRect(
           child: FittedBox(
-            fit: fit,
+            fit:BoxFit.fill,
             child: RotatedBox(
               quarterTurns: rotationCompensation,
               child: SizedBox(
