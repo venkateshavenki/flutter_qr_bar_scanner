@@ -46,12 +46,12 @@ class QRBarScannerCameraState extends State<QRBarScannerCamera> with WidgetsBind
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
   }
 
   @override
   dispose() {
-    WidgetsBinding.instance!.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
@@ -208,13 +208,13 @@ class Preview extends StatelessWidget {
 
         return ClipRect(
           child: FittedBox(
-            fit:BoxFit.fill,
+            fit: BoxFit.fill,
             child: RotatedBox(
               quarterTurns: rotationCompensation,
               child: SizedBox(
                 width: frameWidth,
                 height: frameHeight,
-                child: Transform.scale(scale: 2.0, child: Texture(textureId: textureId!)),
+                child: Transform.scale(scale: 1.5, child: Texture(textureId: textureId!)),
               ),
             ),
           ),
